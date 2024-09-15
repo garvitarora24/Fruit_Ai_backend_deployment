@@ -60,7 +60,10 @@ MIDDLEWARE = [
 ]
 
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    'https://fruitaiappreciate.netlify.app/'
+]
 ROOT_URLCONF = 'fruit_faq_api.urls'
 
 TEMPLATES = [
